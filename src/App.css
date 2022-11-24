@@ -1,11 +1,92 @@
-.App {
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  min-height: 100vh;
 }
 
-.link {
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
-  background: aliceblue;
+#root {
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* MyButton */
+.MyButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.MyButton_negative {
+  background: #fd565f;
+  color: #fff;
+}
+
+.MyButton_positive {
+  background: #64c964;
+  color: #fff;
+}
+
+.MyButton_default {
+  background: #ececec;
+  color: #000;
+}
+
+/* MyHeader */
+header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+header > div {
+  display: flex;
+}
+header button {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header .head_text {
+  width: 50%;
+  font-size: 24px;
+  justify-content: center;
+}
+
+header .head_btn_left {
+  width: 25%;
+  justify-content: start;
+}
+
+header .head_btn_right {
+  width: 25%;
+  justify-content: end;
+}
+
+
+/* PC, 태블릿 사이즈 : 650px 이상일 때 적용*/
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
 }
 
