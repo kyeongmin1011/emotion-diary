@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap');
 
 body {
   padding: 0;
@@ -7,8 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Nanum Pen Script", cursive;
   min-height: 100vh;
+  font-size: 18px;
 }
 
 #root {
@@ -28,7 +29,7 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   white-space: nowrap;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .MyButton_negative {
@@ -57,12 +58,12 @@ header > div {
   display: flex;
 }
 header button {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 header .head_text {
   width: 50%;
-  font-size: 24px;
+  font-size: 28px;
   justify-content: center;
 }
 
@@ -76,6 +77,31 @@ header .head_btn_right {
   justify-content: end;
 }
 
+/* DiaryList */
+.DiaryList .menu_wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.DiaryList .menu_wrapper .right_col {
+  flex-grow: 1;
+}
+.DiaryList .menu_wrapper .right_col button {
+  width: 100%;
+  font-size: 18px;
+}
+.DiaryList .ControlMenu {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Nanum Pen Script", cursive;
+}
 
 /* PC, 태블릿 사이즈 : 650px 이상일 때 적용*/
 @media (min-width: 650px) {
