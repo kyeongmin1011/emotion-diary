@@ -66,11 +66,7 @@ const DiaryList = ({diaryList}) => {
 
       <div>
         {getProcessedDiaryList().map(item => (
-<<<<<<< HEAD
           <DiaryItem key={item.id} {...item} />
-=======
-          <DiaryItem key={item.id} {...item}>{item.content} / 감정 : {item.emotion}</DiaryItem>
->>>>>>> ea0acd3 (페이지 구현-홈(/))
         ))}
       </div>
     </div>
