@@ -1,7 +1,10 @@
+import DiaryEditor from "components/DiaryEditor";
+
 const New = () => {
+
   return (
     <div className="New">
-      <h2>new</h2>
+      <DiaryEditor />
     </div>
   )
 }
