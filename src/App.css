@@ -128,6 +128,7 @@ header .head_btn_right {
 .DiaryItem .emotion_img_wrapper_1 {
   background-color: #64c964;
 }
+<<<<<<< HEAD
 
 .DiaryItem .emotion_img_wrapper_2 {
   background-color: #9dd772;
@@ -141,6 +142,17 @@ header .head_btn_right {
   background-color: #fd8446;
 }
 
+=======
+.DiaryItem .emotion_img_wrapper_2 {
+  background-color: #9dd772;
+}
+.DiaryItem .emotion_img_wrapper_3 {
+  background-color: #fdce17;
+}
+.DiaryItem .emotion_img_wrapper_4 {
+  background-color: #fd8446;
+}
+>>>>>>> ea0acd3 (페이지 구현-홈(/))
 .DiaryItem .emotion_img_wrapper_5 {
   background-color: #fd565f;
 }
@@ -150,7 +162,10 @@ header .head_btn_right {
   margin-left: 20px;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea0acd3 (페이지 구현-홈(/))
 .DiaryItem .diary_date {
   font-weight: bold;
   font-size: 25px;
@@ -165,6 +180,7 @@ header .head_btn_right {
   min-width: 70px;
 }
 
+<<<<<<< HEAD
 /* DiaryEditor */
 .DiaryEditor section {
   margin-bottom: 40px;
@@ -257,6 +273,8 @@ header .head_btn_right {
 
 
 
+=======
+>>>>>>> ea0acd3 (페이지 구현-홈(/))
 
 /* PC, 태블릿 사이즈 : 650px 이상일 때 적용*/
 @media (min-width: 650px) {
