@@ -1,4 +1,4 @@
-import MyButton from "./MyButton";
+import MyButton from "components/MyButton";
 import {useNavigate} from "react-router-dom";
 
 const DiaryItem = ({id, content, emotion, date}) => {
