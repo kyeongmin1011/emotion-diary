@@ -25,5 +25,9 @@
   - `const navigate = useNavigate();`
   - `const goHome = () => navigate('/');`
 
+
+## 프로젝트 기초 공사 1
+- 폰트, 레이아웃, 이미지, 공통 컴포넌트 세팅
+- MyButton: type 
 ### `npm start`
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
