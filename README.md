@@ -37,7 +37,7 @@
 
 
 ## 페이지 구현 - 홈(/)
-### `header`
+### header
 
 - `<` 왼쪽 버튼 : 전 달 페이지 이동
 - `년 월` : 현재 해당 년, 월
@@ -45,7 +45,7 @@
 - 해당 월에 맞는 일기리스트만 출력되게 하기 (useEffect)
 - 일기리스트와, 현재날짜가 바뀌게 되면 일기리스트 리렌더링 !
 
-### `DiaryList`
+### DiaryList
 
 - `DiaryList.js` 컴포넌트 생성 
 - 날짜순, 감정순 정렬 기능
@@ -58,9 +58,17 @@
   - emotionFilter: 감정순 필터
   - copyList: 원본 배열을 건들지 않기 위해 깊은 복사한 배열을 사용
 
-- ### `DiaryItem`
+### DiaryItem
 
 - `DiaryItem.js` 컴포넌트 생성 
   - 이미지 썸네일 
   - 날짜, 내용
   - 수정하기 버튼
+
+
+
+
+## 페이지 구현 - 일기 쓰기(/new)
+
+### 오늘의 감정
+- isSelected(Boolean) 를 통해, 현재 클릭한 emotion id 를 얻어서, css 로 background 변경처리
