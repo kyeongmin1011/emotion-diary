@@ -72,3 +72,12 @@
 
 ### 오늘의 감정
 - isSelected(Boolean) 를 통해, 현재 클릭한 emotion id 를 얻어서, css 로 background 변경처리
+
+
+## 페이지 구현 - 일기 수정(/edit)
+- useParams : path Variable의 id 값 추출
+- useContext : App.js에 있는 data(diaryList) 전달받기
+- `diaryList` 에서 id 값을 찾아서 그 내용을 꺼내오기
+- targetDiary 를 저장할 state 생성
+- isEdit(Boolean) 으로 수정하기, 일기쓰기 판별
+- isEdit true 이면 기존 setData를 selectData로 데이터를 change

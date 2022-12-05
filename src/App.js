@@ -13,13 +13,14 @@ const reducer = (state, action) => {
       return action.data
     }
     case 'CREATE': {
+      console.log('create')
       return [action.data, ...state];
     }
     case 'DELETE': {
       return state.filter(item => item.id !== action.targetId);
     }
     case 'EDIT': {
-      return state.map(item => item.id !== action.data.id ? {...action.data} : item)
+      return state.map(item => item.id === action.data.id ? {...action.data} : item)
     }
     default :
       return state
