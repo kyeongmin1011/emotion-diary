@@ -65,8 +65,7 @@
   - 날짜, 내용
   - 수정하기 버튼
 
-
-
+  
 
 ## 페이지 구현 - 일기 쓰기(/new)
 
@@ -95,3 +94,10 @@
 - `App.js` : dataId 의 useRef(6) 초깃값을 6으로 셋팅, 왜냐하면 dummyData 에서 id가 5까지 되어 있으므로
 - 오타 수정
 - `Home.js` lastDay에 시, 분, 초 그날의 끝인 시간까지 써주어야 한다.
+
+
+## LocalStorage를 일기 데이터베이스로 사용하기
+- `localStorage.setItem('key', 10)` : 데이터 저장
+- `localStorage.getItem('key)` : 데이터 가져오기
+-  `DiaryEditor.js` : 삭제하기 버튼 추가
+- `App.js` : mount될 때, localStorage 값을 꺼내서 data state 기초값으로 사용
