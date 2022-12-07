@@ -29,8 +29,6 @@ const Diary = () => {
     return <div className="DiaryPage">로딩중입니다..</div>
   } else {
     const curEmotionData = emotionList.find(item => parseInt(item.id) === parseInt(data.emotion))
-    console.log(curEmotionData)
-
     return <div className="Diary">
       <MyHeader leftChild={<MyButton text={'뒤로가기'} onClick={() => navigate(-1)}/>}
                 headText={`${getStringDate(new Date(data.date))} 기록`}
