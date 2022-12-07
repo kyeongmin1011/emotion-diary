@@ -6,12 +6,12 @@
 
 
 ## 페이지 라우팅 2 - React Router 응용
-- Path Variable | useParams 
-  - 경로 변수 
+- Path Variable | useParams
+  - 경로 변수
   - /diary/1  -> 1번일기
   - `const {id} = useParams();`
 
-  
+
 - Query String | useSearchParams
   - url과 함께 data를 전달 할 수 있음
   - /edit?id=10&mod=dark
@@ -47,21 +47,21 @@
 
 ### DiaryList
 
-- `DiaryList.js` 컴포넌트 생성 
+- `DiaryList.js` 컴포넌트 생성
 - 날짜순, 감정순 정렬 기능
 - ControlMenu (셀렉트 메뉴 컴포넌트)
   - value: 값
   - onChange: 클릭해서 변경된 값
   - optionList: 정렬 리스트들
-- getProcessedDiaryList (필터 기능)
+  - getProcessedDiaryList (필터 기능)
   - dayFilter: 날짜순 필터
   - emotionFilter: 감정순 필터
   - copyList: 원본 배열을 건들지 않기 위해 깊은 복사한 배열을 사용
 
 ### DiaryItem
 
-- `DiaryItem.js` 컴포넌트 생성 
-  - 이미지 썸네일 
+- `DiaryItem.js` 컴포넌트 생성
+  - 이미지 썸네일
   - 날짜, 내용
   - 수정하기 버튼
 
@@ -81,3 +81,12 @@
 - targetDiary 를 저장할 state 생성
 - isEdit(Boolean) 으로 수정하기, 일기쓰기 판별
 - isEdit true 이면 기존 setData를 selectData로 데이터를 change
+
+## 페이지 구현 - 일기 상세(/diary)
+- useParams : 해당 일기의 id 값 추출
+- useContext : diaryList 받아오기
+- 현재 다이어리 state에 할당
+- data 유무에 따른 페이지 출력
+- getStringDate 공통 컴포넌트로 만들기
+- emotionList 공통 컴포넌트 만들기
+- view 구현

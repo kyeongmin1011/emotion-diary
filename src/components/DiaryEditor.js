@@ -4,25 +4,15 @@ import MyHeader from "components/MyHeader";
 import MyButton from "components/MyButton";
 import EmotionItem from "./EmotionItem";
 import {DiaryDispatchContext} from "../App";
-
-const getStringDate = (date) => {
-  return date.toISOString().slice(0, 10);
-}
-
-const emotionList = [
-  {id: 1, img: `/assets/emotion1.png`, description: '완전 좋음'},
-  {id: 2, img: `/assets/emotion2.png`, description: '좋음'},
-  {id: 3, img: `/assets/emotion3.png`, description: '보통'},
-  {id: 4, img: `/assets/emotion4.png`, description: '나쁨'},
-  {id: 5, img: `/assets/emotion5.png`, description: '완전 나쁨'},
-]
+import {emotionList} from 'util/emotionList';
+import {getStringDate} from 'util/data';
 
 const DiaryEditor = ({isEdit, selectData}) => {
   const {onCreate, onEdit} = useContext(DiaryDispatchContext);
   const contentRef = useRef();
   const navigate = useNavigate();
 
-  const [date, setDate] = useState(getStringDate(new Date()));
+  const [date, setDate] = useState(getStringDate(new Date())); // 현재 날짜를 저장
   const [emotion, setEmotion] = useState(3); // 어떤 감정을 선택했는지 저장
   const [content, setContent] = useState('');
 
