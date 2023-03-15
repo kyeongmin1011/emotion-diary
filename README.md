@@ -65,7 +65,8 @@
   - 날짜, 내용
   - 수정하기 버튼
 
-  
+
+
 
 ## 페이지 구현 - 일기 쓰기(/new)
 
@@ -96,8 +97,9 @@
 - `Home.js` lastDay에 시, 분, 초 그날의 끝인 시간까지 써주어야 한다.
 
 
-## LocalStorage를 일기 데이터베이스로 사용하기
-- `localStorage.setItem('key', 10)` : 데이터 저장
-- `localStorage.getItem('key)` : 데이터 가져오기
--  `DiaryEditor.js` : 삭제하기 버튼 추가
-- `App.js` : mount될 때, localStorage 값을 꺼내서 data state 기초값으로 사용
+## LocalStorage 를 일기 데이터베이스로 사용하기
+- 브라우저에 key-value 값을 Storage에 저장할 수 있다.
+- setItem() - key, value 추가
+- getItem() - value 읽어 오기
+- 로컬스토리지에 저장되는 값들은 기본적으로 문자열로 바껴서 저장된다. (나올때도 동일)
+  
