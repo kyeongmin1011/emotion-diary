@@ -12,7 +12,6 @@ const Diary = () => {
   const diaryList = useContext(DiaryStateContext);
   const [data, setData] = useState(); // 현재 다이어리 state 할당
 
-
   useEffect(() => {
     if (diaryList.length > 1) {
       const targetDiary = diaryList.find(item => Number(item.id) === Number(id));
