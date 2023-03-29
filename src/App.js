@@ -42,8 +42,8 @@ function App() {
   useEffect(() => {
     const localData = localStorage.getItem('diary');
     if (localData) {
-      const diaryList = JSON.parse(localData).sort((a, b) => parseInt(b.id) - parseInt(a.id));
-      dataId.current = parseInt(diaryList[0].id) + 1
+      const diaryList = JSON.parse(localData).sort((a, b) => parseInt(b.id) - parseInt(a.id)); // 내림차순으로 정렬
+      dataId.current = parseInt(diaryList[0].id) + 1 // 0번째의 id가 가장 클 숫자일테니 그다음 숫자를 부여한다.
       dispatch({type: 'INIT', data: diaryList});
     }
   }, [])
